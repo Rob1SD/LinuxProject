@@ -69,6 +69,7 @@ init()
         if [ "$pb" == "mdp" ];
         then
             decryptfolder ~
+            cd -
             rm .pocebleu
         else
             echo "Wrong password"
