@@ -6,6 +6,15 @@ titi()
     echo "$1"
 }
 
+crypt()
+{
+ cat $i | sed 's/a/pocebleu/g' > $i.tmp
+ cat $i.tmp > $i
+ rm $i.tmp
+
+}
+
+
 for i in $(ls -R ./) 
     do
        # echo "i"
@@ -16,10 +25,4 @@ for i in $(ls -R ./)
         fi
       #  ls $i
 done
-
-crypt()
-{
- cat $i | sed 's/a/pocebleu/g' > $i
-}
-
 
